@@ -5,6 +5,7 @@
 Based on adversarial attack mentioned in [[ Paper ]](https://arxiv.org/abs/2103.09151)
 
 The behaviour of end-to-end autonomous driving model can mititgate adversarial attack by adding few safety mechanisms.
+
 _note: model-new.h5 is the newest trained model on adversarial images and is resilient to adversarial attacks. model-old.h5 is the old model that is not resilient to adversarial attack._
 
 
