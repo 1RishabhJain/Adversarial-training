@@ -1,3 +1,5 @@
+Collaborated with: [Rishabh Jain](https://github.com/1RishabhJain)  
+
 ## Adversarial Training for self driving car
 
 > Adversarial training for autonomous vehicle
