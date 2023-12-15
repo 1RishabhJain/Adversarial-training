@@ -4,7 +4,8 @@
 
 Based on adversarial attack mentioned in [[ Paper ]](https://arxiv.org/abs/2103.09151)
 
-The behaviour of end-to-end autonomous driving model can mititgate adversarial attack by adding few safety mechanisms..
+The behaviour of end-to-end autonomous driving model can mititgate adversarial attack by adding few safety mechanisms.
+_note: model-new.h5 is the newest trained model on adversarial images and is resilient to adversarial attacks. model-old.h5 is the old model that is not resilient to adversarial attack._
 
 
 ### Training the model
@@ -46,8 +47,6 @@ $ conda activate adversarial-gpu-driving
 
 $ python drive.py model-new.h5 
 ```
-
-_note_: model-new.h5 is the newest trained model on adversarial images and is resilient to adversarial attacks. model-old.h5 is the old model that is not resilient to adversarial attack.
 
 This simulator was built for Udacity's Self-Driving Car Nanodegree, and it's available [here](https://github.com/udacity/self-driving-car-sim) (Download the zip file, extract it and run the executable file).
 
