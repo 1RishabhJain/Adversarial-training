@@ -44,10 +44,11 @@ $ # GPU
 $ conda env create -f environment_gpu.yml
 $ conda activate adversarial-gpu-driving
 
-$ python drive.py model.h5 
+$ python drive.py model-new.h5 
 ```
 
-_note_: model.h5 is the newest trained model
+_note_: model-new.h5 is the newest trained model on adversarial images and is resilient to adversarial attacks. model-old.h5 is the old model that is not resilient to adversarial attack.
+
 This simulator was built for Udacity's Self-Driving Car Nanodegree, and it's available [here](https://github.com/udacity/self-driving-car-sim) (Download the zip file, extract it and run the executable file).
 
 ```
