@@ -57,27 +57,4 @@ $ ./client
 
 The web page is available at: http://localhost:3333/
 
-<!-- <a href="https://youtu.be/DOdaiGxgHEs"><img src="./doc/video.png" /></a> -->
 
-## Adversarial ROS Driving
-
-We also tested our attacks in ROS Gazebo simulator. 
-
-https://github.com/wuhanstudio/adversarial-ros-driving
-
-[![](https://raw.githubusercontent.com/wuhanstudio/adversarial-ros-driving/master/doc/adversarial-ros-driving.png)](https://github.com/wuhanstudio/adversarial-ros-driving)
-
-## Citation
-
-```
-@INPROCEEDINGS{han2023driving,
-  author={Wu, Han and Yunas, Syed and Rowlands, Sareh and Ruan, Wenjie and Wahlström, Johan},
-  booktitle={2023 IEEE Intelligent Vehicles Symposium (IV)}, 
-  title={Adversarial Driving: Attacking End-to-End Autonomous Driving}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-7},
-  doi={10.1109/IV55152.2023.10186386}
-}
-```
