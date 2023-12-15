@@ -16,7 +16,8 @@ from utils import INPUT_SHAPE, batch_generator
 import argparse
 #for reading files
 import os
-# for adding random noise
+#add gausian noise
+from keras.layers import GaussianNoise
 
 #for debugging, allows for reproducible (deterministic) results 
 np.random.seed(0)
@@ -70,18 +71,17 @@ def build_model(args):
     model = Sequential()
     model.add(Lambda(lambda x: x/127.5-1.0, input_shape=INPUT_SHAPE))
     model.add(Conv2D(24, 5, activation='elu', strides=(2,2)))
+    model.add(GaussianNoise(0.5))
     model.add(Conv2D(36, 5, activation='elu', strides=(2,2)))
+    model.add(GaussianNoise(0.5))
     model.add(Conv2D(48, 5, activation='elu', strides=(2,2) ))
     model.add(Conv2D(64, 3, activation='elu', strides=(1, 1)))
     model.add(Conv2D(64, 3, activation='elu', strides=(1,1)))
     model.add(Dropout(args.keep_prob))
     model.add(Flatten())
     model.add(Dense(100, activation='elu'))
-    model.add(GaussianNoise(0.1))
     model.add(Dense(50, activation='elu'))
-    model.add(GaussianNoise(0.1))
     model.add(Dense(10, activation='elu'))
-    model.add(GaussianNoise(0.1))
     model.add(Dense(1))
     model.summary()
 
@@ -99,7 +99,7 @@ def train_model(model, args, X_train, X_valid, y_train, y_valid):
     # made based on either the maximization or the minimization of the monitored quantity. For val_acc, 
     #this should be max, for val_loss this should be min, etc. In auto mode, the direction is automatically
     # inferred from the name of the monitored quantity.
-    checkpoint = ModelCheckpoint('model-mit-{epoch:03d}.h5',
+    checkpoint = ModelCheckpoint('model-{epoch:03d}.h5',
                                  monitor='val_loss',
                                  verbose=0,
                                  save_best_only=args.save_best_only,
