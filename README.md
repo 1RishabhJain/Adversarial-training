@@ -1,19 +1,18 @@
-## Adversarial Driving
+## Adversarial Training for self driving car
 
-> Attacking End-to-End Autonomous Driving
+> Adversarial training for autonomous vehicle
 
-[[ Talk ]](https://driving.wuhanstudio.uk) [[ Video ]](https://youtu.be/I0i8uN2oOP0) [[ Code ]](https://github.com/wuhanstudio/adversarial-driving) [[ Paper ]](https://arxiv.org/abs/2103.09151)
+Based on adversarial attack mentioned in [[ Paper ]](https://arxiv.org/abs/2103.09151)
 
-The behaviour of end-to-end autonomous driving model can be manipulated by adding unperceivable perturbations to the input image.
+The behaviour of end-to-end autonomous driving model can mititgate adversarial attack by adding few safety mechanisms..
 
-[![](./doc/adversarial-driving.png)](https://driving.wuhanstudio.uk)
 
 ### Quick Start
 
 You may use [anaconda](https://www.continuum.io/downloads) or [miniconda](https://conda.io/miniconda.html). 
 
 ```python
-$ git clone https://github.com/wuhanstudio/adversarial-driving
+$ git clone https://github.com/MJavaadAkhtar/Adversarial-training
 $ cd adversarial-driving/model
 
 $ # CPU
@@ -24,9 +23,10 @@ $ # GPU
 $ conda env create -f environment_gpu.yml
 $ conda activate adversarial-gpu-driving
 
-$ python drive.py model.h5
+$ python drive.py model.h5 
 ```
 
+_note_: model.h5 is the newest trained model
 This simulator was built for Udacity's Self-Driving Car Nanodegree, and it's available [here](https://github.com/udacity/self-driving-car-sim) (Download the zip file, extract it and run the executable file).
 
 ```
