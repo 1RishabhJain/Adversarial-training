@@ -13,7 +13,7 @@ _note: model-new.h5 is the newest trained model on adversarial images and is res
 
 ### Training the model
 
-You can use the [dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/December/584f6edd_data/data.zip) from Udacity to train your own autonomous driving model. Extract the dataset to **model/data**, and the folder structure should be like this. Due to its sheer size, in-house dataset was not uploaded.
+You can use the [dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/December/584f6edd_data/data.zip) from Udacity to train your own autonomous driving model. Extract the dataset to **model/data**, and the folder structure should be like this. Due to its sheer size, all the in-house dataset was not uploaded (only partial is uploaded for the purpose of demonstration).
 
 ```
 ├───model
