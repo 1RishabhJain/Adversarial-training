@@ -8,12 +8,12 @@ Based on adversarial attack mentioned in [[ Paper ]](https://arxiv.org/abs/2103.
 
 The behaviour of end-to-end autonomous driving model can mititgate adversarial attack by adding few safety mechanisms.
 
-_note: model-new.h5 is the newest trained model on adversarial images and is resilient to adversarial attacks. model-old.h5 is the old model that is not resilient to adversarial attack._
+__note: model-new.h5 is the newest trained model on adversarial images and is resilient to adversarial attacks. model-old.h5 is the old model that is not resilient to adversarial attack.__
 
 
 ### Training the model
 
-You can use the [dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/December/584f6edd_data/data.zip) from Udacity to train your own autonomous driving model. Extract the dataset to **model/data**, and the folder structure should be like this. Due to its sheer size, all the in-house dataset was not uploaded (only partial is uploaded for the purpose of demonstration).
+You can use the [dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/December/584f6edd_data/data.zip) from Udacity to train your own autonomous driving model. Extract the dataset to **model/data**, and the folder structure should be like this. __Due to its sheer size, all the in-house dataset was not uploaded (only partial is uploaded for the purpose of demonstration)__.
 
 ```
 ├───model
